@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 50px); /* Cambia el número 3 según el tamaño de tu tablero */
+    gap: 120px;
+    place-items: center;
+    height: 100vh; /* Esto centra verticalmente en toda la ventana */
+    justify-content: center;
+
+    background-color: blue;
+    
+}   
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db; /* Color de celda vacía */
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.cell.ship {
+    background-color: #e74c3c; /* Color de celda con barco */
+    color: #fff;
+}
+
