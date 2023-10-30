@@ -1,24 +1,38 @@
-body {
-    text-align: center;
-    font-family: Arial, sans-serif;
+*{
+    padding: 0;
+    margin: 0;
 }
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+h1{
+    text-align: center;
+    font: 3em sans-serif bold;
+}
+
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(7, 50px); /* Cambia el número 3 según el tamaño de tu tablero */
-    gap: 120px;
-    place-items: center;
-    height: 100vh; /* Esto centra verticalmente en toda la ventana */
-    justify-content: center;
-
-    background-color: blue;
+    grid-template-columns: repeat(20, 50px); /* 20 columnas de 50px cada una */
+    gap: 8px;
     
-}   
+    margin: 20px auto;
+    background-color: #3498db;
+    width: 95%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+}
 
 .cell {
-    width: 100px;
-    height: 100px;
-    background-color: #3498db; /* Color de celda vacía */
+    width: 50px;
+    height: 50px;
+    background-color: black; /* Color de celda vacía */
     border: 1px solid #ccc;
     display: flex;
     align-items: center;
@@ -26,11 +40,6 @@ body {
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 20px;
-}
-
-.cell.ship {
-    background-color: #e74c3c; /* Color de celda con barco */
-    color: #fff;
+    
 }
 
